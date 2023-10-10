@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Home from "./Pages/Home"
 import Animations from "./Pages/Animations"
@@ -6,33 +6,30 @@ import Designs from "./Pages/Designs"
 import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
 import About from "./Pages/About"
-import Aos from "aos"
-import 'aos/dist/aos.css'
+import React from "react"
 import './styles.css'
 
-Aos.init();
-
 const App = () => {
+  const location = useLocation()
+
   const [headerID, setHeaderID] = useState("")
-  const [headerContainer, setHeaderContainer] = useState("")
+  const [sharedHeaderClass, setSharedHeaderClass] = useState("")
 
-  const headerChange = () => {
-    
-      setHeaderID('home-header')
-      setHeaderContainer("container-home-header")
-    
-      
-    
-  }
-
-  useEffect(()=>{
-    headerChange()
-  }, [])
+  React.useEffect(() => {
+    // runs on location, i.e. route, change
+    if(location.pathname === "/"){
+      setSharedHeaderClass(null)
+      setHeaderID("home-header")
+    } else {
+      setHeaderID(null)
+      setSharedHeaderClass("shared-header")
+    }
+  }, [location])
 
   return (
     <>
    <div className ="site-wrapper">
-   <Header id={headerID} container={headerContainer}/>
+   <Header id={headerID} className={sharedHeaderClass}/>
     <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/about" element = {<About />} />
