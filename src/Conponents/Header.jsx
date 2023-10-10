@@ -2,8 +2,8 @@ import {Link} from "react-router-dom"
 
 const Header = (props) => {
     return(
-        <header id={props.id} className="shared-header">
-        <section id={props.container} className="container-shared-header">
+        <header id={props.id} className={props.className}>
+        <section className="container-shared-header">
             <a href ="#" className = "toggle-button">
                 <span className ="bar"></span>
                 <span className ="bar"></span>
@@ -15,7 +15,6 @@ const Header = (props) => {
             </div>
             <ul className="nav-area">
                 <li><Link to="/">HOME</Link></li>
-                <li><Link to= "/About">ABOUT</Link></li>
                 <li><Link to="/Animations">ANIMATIONS</Link></li>
                 <li><Link to="/Designs">PORTFOLIO</Link></li>
             </ul>

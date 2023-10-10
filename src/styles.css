@@ -107,7 +107,7 @@
     width: 100%;
     height: inherit;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 1000;
 }
 
@@ -237,8 +237,6 @@ body{
 }
 
 .about-content-flex{
-    display:flex;
-    flex-direction: column;
     position: relative;
 }
 

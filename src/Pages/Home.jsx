@@ -1,12 +1,13 @@
+import About from "./About";
+import { useLocation } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
-      <div>
-        <video autoPlay muted loop className="home-page-animation">
-          <source src="Videos\Timeline_1.mp4" type="video/mp4" />
-          Sorry, your browser doesn't support videos.
-        </video>
-      </div>
+    <video autoPlay muted loop className="home-page-animation">
+        <source src="Videos\Timeline_1.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support videos.
+    </video>
     </>
   );
 };
