@@ -2,6 +2,7 @@ import {Link} from "react-router-dom"
 
 const Header = (props) => {
     return(
+        <>
         <header id={props.id} className={props.className}>
         <section className="container-shared-header">
             <a href ="#" className = "toggle-button">
@@ -20,6 +21,7 @@ const Header = (props) => {
             </ul>
         </section>
         </header> 
+        </>
     )
 }
 
