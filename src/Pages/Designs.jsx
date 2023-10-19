@@ -27,8 +27,8 @@ const Designs = () => {
             <h1>Designs</h1>
             <div className="gallery-container">
                 <div className="gallery-picture">
-                    <img onClick={(e) =>{imageClick(e.target.src)}} src="./pictures/Chalks_BBQ_Banner.png"></img>
-                    <img onClick={(e) =>{imageClick(e.target.src)}} src="./pictures/Chalks_BBQ.png"></img>
+                    <img onClick={(e) =>{imageClick(e.target.src)}} src="/pictures/Chalks_BBQ_Banner.png"></img>
+                    <img onClick={(e) =>{imageClick(e.target.src)}} src="/pictures/Chalks_BBQ.png"></img>
                 </div>
             </div>
         </div>
