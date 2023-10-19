@@ -1,9 +1,14 @@
-import Software from "../Conponents/Software";
+import Software from "./Software";
+import Aos from "aos";
+Aos.init();
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+
 
 const About = () => {
   return (
     <>
-      <div className="about-content-flex">
+      <div className="about-content-flex" data-aos="fade-up" data-aos-duration="3000">
         <section className="about-section2-bg">
           <div className="about-section-content">
             <h1>About Me</h1>
@@ -46,15 +51,15 @@ const About = () => {
             <div className="software-text">Software</div>
             <div className="software">
               <Software
-                img="https://devicon-website.vercel.app/api/aftereffects/original.svg"
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
                 text="After Effects"
               />
               <Software
-                img="https://devicon-website.vercel.app/api/photoshop/plain.svg"
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
                 text="Photoshop"
               />
               <Software
-                img="https://devicon-website.vercel.app/api/illustrator/plain.svg"
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
                 text="Illustrator"
               />
               <Software
@@ -62,11 +67,7 @@ const About = () => {
                 text="Spine-2D"
               />
               <Software
-                img="https://upload.wikimedia.org/wikipedia/commons/d/d7/NicePng_studio-png_1259519.png"
-                text="FL-Studio"
-              />
-              <Software
-                img="https://devicon-website.vercel.app/api/maya/original.svg"
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
                 text="Maya Autodesk"
               />
               <Software
@@ -74,16 +75,69 @@ const About = () => {
                 text="Davanci Resolve"
               />
               <Software
-                img="https://devicon-website.vercel.app/api/visualstudio/plain.svg?color=%23275FBE"
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                 text="Visual Studio Code"
               />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                text="Node.js"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" 
+                text="Sequelize"
+              />
+              <Software 
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                text="Postgres"
+              />
+              <Software 
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                text="Javascript"
+              />  
+              <Software 
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                text="React.js"
+              />
+              <Software 
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                text="Github"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                text="Git"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                text="HTML 5"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                text="Jquery"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+                text="NPM"
+              />
+              <Software
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                text="Express.js" 
+              />
+              <Software 
+                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                text="CSS 3"
+              />
+
+
+
               <div className="devicon">
                 <p>Adobe In-Design</p>
               </div>
             </div>
           </div>
         </section>
+       
       </div>
+      
     </>
   );
 };

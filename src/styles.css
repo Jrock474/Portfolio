@@ -5,8 +5,8 @@
     height: auto;
 }
 #devicon-image{
-    max-height: 100px;
-    max-width: auto;
+    height: 100px;
+    width: 100px;
 }
 .container-shared-header{
     padding-left: 0;
@@ -34,6 +34,7 @@
     line-height: 50px;
     text-decoration: none;
     font-size: 1.125rem;
+    z-index: 1000;
 }
 
 .shared-footer a{
@@ -90,7 +91,6 @@
 }
 
 #home-header{
-    position: fixed;
     background: rgba(0, 0, 0, 0.3);
     color: #f1f1f1;
     width: 100%;
@@ -109,34 +109,6 @@
     display: flex;
     justify-content: space-evenly;
     z-index: 1000;
-}
-
-.home-footer{
-    line-height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    position:fixed;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 0px;
-    font-size: 1.125rem;
-}
-
-.home-footer a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.home-footer p img{
-    height: 25px;
-    padding-top: 10px;
-}
-
-.home-footer p a:hover{
-    color: aqua;
 }
 
 .home-page-animation{
@@ -162,17 +134,14 @@
     
 }
 
-.about-section1-bg{
-    padding-left: 20px;
-    padding-right: 20px;
-    height: auto;
-    background-color:rgb(29, 29, 29);
-}
+
 
 .about-section2-bg{
-    background-color:rgb(53, 52, 52);
     padding-left: 20px;
     padding-right: 20px;
+    background-image: linear-gradient(rgb(75, 75, 75, 0.0), rgb(26, 26, 48, 1), rgb(26, 26, 48, 1));
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .about-section-content{
@@ -181,6 +150,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    padding-top: 10px;
 }
 
 .skills{
@@ -238,6 +208,7 @@ body{
 
 .about-content-flex{
     position: relative;
+    margin-top: 600px;
 }
 
 .software-text{
@@ -256,13 +227,7 @@ body{
     padding-bottom: 50px;
 }
 
-.software p{
-    font-size: 1.6rem;
-    white-space: nowrap;
-    border: 1px solid #fff;
-    padding: 10px;
-    margin: 0;
-}
+
 
 .gallery-section{
     min-height: 100%;
@@ -316,6 +281,7 @@ body{
 
 html{
     height: 100%;
+    background-color: rgb(192, 175, 175);
 }
 
 
@@ -371,6 +337,15 @@ html{
     border-radius: 10px;
 }
 
+#devicon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
 html{
     font-family: 'Helvetica';
 }
@@ -418,14 +393,6 @@ html{
         flex-direction: column;
     }
 
-    #devicon{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 20px;
-        padding-right: 20px;
-        
-    }
 
     .gallery-container{
         display: flex;

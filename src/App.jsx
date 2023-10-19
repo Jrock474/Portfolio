@@ -5,7 +5,6 @@ import Animations from "./Pages/Animations"
 import Designs from "./Pages/Designs"
 import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
-import About from "./Pages/About"
 import React from "react"
 import './styles.css'
 
@@ -32,7 +31,6 @@ const App = () => {
    <Header id={headerID} className={sharedHeaderClass}/>
     <Routes>
         <Route path = "/" element = {<Home />} />
-        <Route path = "/about" element = {<About />} />
         <Route path = "/animations" element = {<Animations />} />
         <Route path = "/designs" element = {<Designs />} />
     </Routes>
