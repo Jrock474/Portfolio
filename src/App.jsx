@@ -1,12 +1,12 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
-import Home from "./Pages/Home"
 import Animations from "./Pages/Animations"
 import Designs from "./Pages/Designs"
 import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
 import React from "react"
 import './styles.css'
+import Home_Navigation from "./Pages/Home_Navigation"
 
 const App = () => {
   const location = useLocation()
@@ -30,7 +30,7 @@ const App = () => {
    <div className ="site-wrapper">
    <Header id={headerID} className={sharedHeaderClass}/>
     <Routes>
-        <Route path = "/" element = {<Home />} />
+        <Route path = "/" element = {<Home_Navigation />} />
         <Route path = "/animations" element = {<Animations />} />
         <Route path = "/designs" element = {<Designs />} />
     </Routes>
