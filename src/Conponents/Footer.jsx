@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <footer className="shared-footer">
+        <footer id={props.id} className={props.className}>
       <p>
           <a href="jordanw0412@gmail.com">Contact</a>
       </p>    

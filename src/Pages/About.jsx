@@ -1,4 +1,4 @@
-import Software from "./Software";
+import Software from "../Conponents/Software";
 import Aos from "aos";
 Aos.init();
 import 'aos/dist/aos.css'; // You can also use <link> for styles
