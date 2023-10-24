@@ -17,7 +17,6 @@ const Designs = () => {
             setIsLightBoxActive(false)
             setLightBox("")
         }
-
     }
 
     return(
