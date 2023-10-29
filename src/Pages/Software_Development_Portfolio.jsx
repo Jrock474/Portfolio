@@ -20,6 +20,13 @@ const Software_Development_Portfolio = () => {
         website = "https://react-project-jrock474.vercel.app/"
         description = "My first React Project that searches and displays all Countries from an API while also displaying specific information on the selected country such as it's continent, timezone, ect."
       />
+      <Software_Development_Project 
+        img="https://raw.githubusercontent.com/Jrock474/Austral.github.io/main/Site_Files/Screen%20Shot%202023-10-29%20at%207.19.55%20PM.png"
+        title = "Portfolio (Outdated)"
+        gitHub = "https://github.com/Jrock474/Austral.github.io"
+        website = "https://jrock474.github.io/Austral.github.io/index.html"
+        description = "This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
+      />
     </div>
     </>
   )

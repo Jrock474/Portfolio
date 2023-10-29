@@ -2,7 +2,10 @@ import React from 'react'
 
 const MultiMedia = () => {
   return (
-    <div>MultiMedia</div>
+    <>
+    <h1>MultiMedia</h1>
+    <div className='coming-soon'>Coming Soon!</div>
+    </>
   )
 }
 

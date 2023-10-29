@@ -27,9 +27,9 @@ const Header = (props) => {
                 <div className="sub-heading">Multimedia Design</div></Link>
             </div>
             <ul className={isNavbarSelected ? "nav-area.active" : "nav-area"}>
-                <li><Link to="/about">ABOUT</Link></li>
-                <li><Link to="/software-development">SOFTWARE-DEVELOPMENT</Link></li>
-                <li><Link to="/Designs">PORTFOLIO</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/software-development">Software-Development</Link></li>
+                <li><Link to="/multi-media">Multi-Media</Link></li>
             </ul>
         </section>
         </header> 
