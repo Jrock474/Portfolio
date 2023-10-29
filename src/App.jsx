@@ -6,6 +6,7 @@ import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
 import About from "./Pages/About"
 import React from "react"
+import MultiMedia from "./Pages/MultiMedia"
 import './styles.css'
 import Home_Navigation from "./Pages/Home_Navigation"
 import Software_Development_Portfolio from "./Pages/Software_Development_Portfolio"
@@ -41,7 +42,7 @@ const App = () => {
         <Route path = "/" element = {<Home_Navigation />} />
         <Route path = "/about" element = {<About />} />
         <Route path = "/software-development" element = {<Software_Development_Portfolio />} />
-        <Route path = "/designs" element = {<Designs />} />
+        <Route path = "/multi-media" element = {<MultiMedia />} />
     </Routes>
     <Footer id={footerID} className={sharedFooterClass} />
    </div>

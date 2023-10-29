@@ -11,11 +11,11 @@ const Home_Navigation = () => {
     }
 
     const navigateMutiMedia = () =>{
-        navigate("/animations")
+        navigate("/multi-media")
     }
 
     const navigateSoftwareDev = () =>{
-        navigate("/designs")
+        navigate("/software-development")
     }
 
   return (
