@@ -10,11 +10,11 @@ const MultiMedia = () => {
     }
 
     const navigateDesigns = () =>{
-        navigate("/multi-meida/designs")
+        navigate("/designs")
     }
 
     const navigateMusic = () =>{
-        navigate("/multi-media/music")
+        navigate("/music")
     }
 
   return (

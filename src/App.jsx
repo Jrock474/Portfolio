@@ -45,9 +45,9 @@ const App = () => {
         <Route path = "/about" element = {<About />} />
         <Route path = "/software-development" element = {<Software_Development_Portfolio />} />
         <Route path = "/multi-media" element = {<MultiMedia />} />
-        <Route path = "/multi-media/designs" element = {<Designs />} />
+        <Route path = "/designs" element = {<Designs />} />
         <Route path = "/animations" element = {<Animations />} />
-        <Route path = "/multi-media/music" element = {<Music />} />
+        <Route path = "/music" element = {<Music />} />
     </Routes>
     <Footer id={footerID} className={sharedFooterClass} />
    </div>

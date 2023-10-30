@@ -10,8 +10,8 @@ const About = () => {
     <>
       <div className="about-content-flex" data-aos="fade-up" data-aos-duration="3000">
         <section className="about-section2-bg">
+          <h1>About Me</h1>
           <div className="about-section-content">
-            <h1>About Me</h1>
             <p>
               I've studied Multimedia and Music since 2018. My journey started
               very early when I attended many coding and game design camps in my
