@@ -1,15 +1,17 @@
 import { Route, Routes, useLocation } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useState, } from "react"
+
 import Animations from "./Pages/Animations"
+import Music from "./Pages/Music"
 import Designs from "./Pages/Designs"
 import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
 import About from "./Pages/About"
 import React from "react"
-import MultiMedia from "./Pages/MultiMedia"
-import './styles.css'
+import MultiMedia from "./Pages/MultiMedia_Nav"
 import Home_Navigation from "./Pages/Home_Navigation"
 import Software_Development_Portfolio from "./Pages/Software_Development_Portfolio"
+import './styles.css'
 
 const App = () => {
   const location = useLocation()
@@ -43,6 +45,9 @@ const App = () => {
         <Route path = "/about" element = {<About />} />
         <Route path = "/software-development" element = {<Software_Development_Portfolio />} />
         <Route path = "/multi-media" element = {<MultiMedia />} />
+        <Route path = "/designs" element = {<Designs />} />
+        <Route path = "/animations" element = {<Animations />} />
+        <Route path = "/music" element = {<Music />} />
     </Routes>
     <Footer id={footerID} className={sharedFooterClass} />
    </div>
