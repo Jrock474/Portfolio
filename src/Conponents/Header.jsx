@@ -23,8 +23,8 @@ const Header = (props) => {
                 <span className ="bar"></span>
             </div>
             <div className="welcome-text"><Link to="/">
-                <div className="heading">Austral</div>
-                <div className="sub-heading">Multimedia Design</div></Link>
+                <div className="heading">Jordan</div>
+                <div className="sub-heading">Multimedia & Software Development</div></Link>
             </div>
             <ul className={isNavbarSelected ? "nav-area.active" : "nav-area"}>
                 <li><Link to="/about">About</Link></li>
