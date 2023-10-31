@@ -13,6 +13,9 @@ const About = () => {
               This eventually turned into a passion where I would forever be in a perpetual state of learning as 
               as technology is constantly evolving.   My goal is to combine my knowlege of Software Development with my passion with Multi Media and contribute to the Art and Software Development Community. 
             </p>
+            <p>
+              All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
+            </p>
             <div className="line-seporator"></div>
             <div className="skills-text">Skills</div>
             <div className="skills">
@@ -106,9 +109,7 @@ const About = () => {
             </div>
           </div>
         </section>
-       
       </div>
-      
     </>
   );
 };
