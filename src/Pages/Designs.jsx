@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Designs = () => {
 
+    // Lightbox effect logic
     const [isLightboxActive, setIsLightBoxActive] = useState(false)
     const [lightbox, setLightBox] = useState("") 
     

@@ -1,22 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Home_Navigation = () => {
-
-    const navigate = useNavigate()
-
-    const navigateAbout = () =>{
-        navigate("/about")
-    }
-
-    const navigateMutiMedia = () =>{
-        navigate("/multi-media")
-    }
-
-    const navigateSoftwareDev = () =>{
-        navigate("/software-development")
-    }
 
   return (
     <>
@@ -27,17 +13,23 @@ const Home_Navigation = () => {
     <div className='home-wrapper'>
         <div className='main-nav-container'>
             <div className='about-nav'>
-                <div onClick={navigateAbout} className='main-nav-item'>
-                    <p>ABOUT</p>
-                </div>
+                <Link to="/about">
+                    <div className='main-nav-item'>
+                        <p>ABOUT</p>
+                    </div>
+                </Link>
             </div>
             <div className='main-nav'>
-                <div onClick={navigateMutiMedia} className='main-nav-item'>
-                    <p>Mutli-Media</p>
-                </div>
-                <div onClick={navigateSoftwareDev} className='main-nav-item'>
-                    <p>Software Development</p>
-                </div>
+                <Link to="/multi-media">
+                    <div className='main-nav-item'>
+                        <p>Mutli-Media</p>
+                    </div>
+                </Link>
+                <Link to="/software-development">
+                    <div className='main-nav-item'>
+                        <p>Software Development</p>
+                    </div>
+                </Link>
             </div>
         </div>
     </div>
