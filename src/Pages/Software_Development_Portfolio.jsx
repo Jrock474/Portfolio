@@ -22,10 +22,17 @@ const Software_Development_Portfolio = () => {
       />
       <Software_Development_Project 
         img="https://raw.githubusercontent.com/Jrock474/Austral.github.io/main/Site_Files/Screen%20Shot%202023-10-29%20at%207.19.55%20PM.png"
-        title = "Portfolio (Outdated)"
+        title = "Portfolio (Version 1)"
         gitHub = "https://github.com/Jrock474/Austral.github.io"
         website = "https://jrock474.github.io/Austral.github.io/index.html"
         description = "This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
+      />
+      <Software_Development_Project 
+        img="https://user-images.githubusercontent.com/38538883/281213796-b499276b-fcb3-4f24-8a62-e867a5085af2.png"
+        title = "Kanri-Mono"
+        gitHub = "https://github.com/Jrock474/Capstone_Project"
+        website = "https://capstone-project-psi-bay.vercel.app/"
+        description = "I served as the Project Manager and my responsibillities were: Deployment, Database & Database Migrations, Game Logic, server-side Login & Registration logic, and server-side Save Data logic"
       />
     </div>
     </>
