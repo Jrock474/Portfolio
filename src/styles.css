@@ -493,12 +493,29 @@ html{
         display: flex;
     }
 
-    .nav-area.active{
+    .nav-area-active{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+    
+    .nav-area-active li{
+        display: inline-block;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .nav-area-active li a{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    .nav-area-active li a:hover{
+        background: #fff;
+        color: #333;
     }
 
     .skills{
