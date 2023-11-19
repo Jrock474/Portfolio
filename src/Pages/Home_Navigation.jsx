@@ -9,7 +9,11 @@ const Home_Navigation = () => {
 
   return (
     <>
-    {isAboutActive ? <About />
+    <video autoPlay muted loop className="home-page-animation">
+            <source src="Videos\Timeline_1.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support videos.
+        </video>
+    {/* {isAboutActive ? <About />
      : 
     <>  
         <video autoPlay muted loop className="home-page-animation">
@@ -40,7 +44,7 @@ const Home_Navigation = () => {
             </div>
         </div>
         </>
-        }
+        } */}
     </>
   )
 }
