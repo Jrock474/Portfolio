@@ -1,17 +1,17 @@
 import { useContext } from "react";
 import Software from "../Conponents/Software";
-import { AboutState } from "./Home_Navigation";
+import { BannerState } from "../App";
 
 const About = () => {
 
-  const [isAboutActive, setIsAboutActive] = useContext(AboutState)
+  const [isBannerActive, setIsBannerActive] = useContext(BannerState)
   const handleClick = (e) =>{
-    // Checks if the Banner Section is Clicked and if it's active
+    // Changes Banner state that influences conditonal rendering of parent components such as the header
     if (e == "Start"){
-      if (isAboutActive === true) {
-        setIsAboutActive(false)
+      if (isBannerActive === true) {
+        setIsBannerActive(false)
       } else {
-        setIsAboutActive(true)
+        setIsBannerActive(true)
       }
     }
   }
