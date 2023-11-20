@@ -1,17 +1,20 @@
-import React, {useState, createContext, use} from 'react'
+import React, {useState, useContext} from 'react'
 import About from './About'
 import Home_Navigation_Boxes from '../Conponents/Home_Navigation_Boxes'
+import { BannerState } from '../App'
 
-export const AboutState = createContext()
+
 
 
 const Home_Navigation = () => {
 
-    const [isAboutActive, setIsAboutActive] = useState(true)
+    const [isBannerActive, setIsBannerActive] = useContext(BannerState)
 
   return (
     <>
-    {isAboutActive ? <AboutState.Provider value={[isAboutActive, setIsAboutActive]}> <About />  </AboutState.Provider>
+    
+    {/* Renders the about/landing component is banner is active, otherwise renders home page */}
+    {isBannerActive ? <About />  
      : 
     <>  
         <video autoPlay muted loop className="home-page-animation">

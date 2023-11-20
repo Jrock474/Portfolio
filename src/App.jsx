@@ -1,20 +1,23 @@
 import { Route, Routes, useLocation } from "react-router-dom"
-import { useState } from "react"
+import { useState, createContext} from "react"
 
 import Animations from "./Pages/Animations"
 import Music from "./Pages/Music"
 import Designs from "./Pages/Designs"
 import Header from "./Conponents/Header"
 import Footer from "./Conponents/Footer"
-import About from "./Pages/About"
 import React from "react"
 import MultiMedia from "./Pages/MultiMedia_Nav"
 import Home_Navigation from "./Pages/Home_Navigation"
 import Software_Development_Portfolio from "./Pages/Software_Development_Portfolio"
 import './styles.css'
 
+export const BannerState = createContext()
+
 const App = () => {
   const location = useLocation()
+
+  const [isBannerActive, setIsBannerActive] = useState(true)
 
   const [footerID, setFooterID] = useState("")
   const [sharedFooterClass, setSharedFooterClass] = useState("")
@@ -39,16 +42,22 @@ const App = () => {
   return (
     <>
    <div className ="site-wrapper">
-   <Header id={headerID} className={sharedHeaderClass}/>
-    <Routes>
+    
+     {/* Conditional render that hides the header if the banner is active */}
+    {isBannerActive ?
+    null
+     : 
+    <Header id={headerID} className={sharedHeaderClass}/>}
+    <BannerState.Provider value={[isBannerActive, setIsBannerActive]}>
+      <Routes>
         <Route path = "/" element = {<Home_Navigation />} />
-        <Route path = "/about" element = {<About />} />
         <Route path = "/software-development" element = {<Software_Development_Portfolio />} />
         <Route path = "/multi-media" element = {<MultiMedia />} />
         <Route path = "/designs" element = {<Designs />} />
         <Route path = "/animations" element = {<Animations />} />
         <Route path = "/music" element = {<Music />} />
-    </Routes>
+      </Routes>
+    </BannerState.Provider>
     <Footer id={footerID} className={sharedFooterClass} />
    </div>
    </>
