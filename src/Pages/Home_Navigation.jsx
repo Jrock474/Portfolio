@@ -1,6 +1,8 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState, createContext, use} from 'react'
 import About from './About'
+import Home_Navigation_Boxes from '../Conponents/Home_Navigation_Boxes'
+
+export const AboutState = createContext()
 
 
 const Home_Navigation = () => {
@@ -9,7 +11,7 @@ const Home_Navigation = () => {
 
   return (
     <>
-    {isAboutActive ? <About />
+    {isAboutActive ? <AboutState.Provider value={[isAboutActive, setIsAboutActive]}> <About />  </AboutState.Provider>
      : 
     <>  
         <video autoPlay muted loop className="home-page-animation">
@@ -18,25 +20,7 @@ const Home_Navigation = () => {
         </video>
         <div className='home-wrapper'>
             <div className='main-nav-container'>
-                <div className='about-nav'>
-                    <Link to="/about">
-                        <div className='main-nav-item'>
-                            <p>ABOUT</p>
-                        </div>
-                    </Link>
-                </div>
-                <div className='main-nav'>
-                    <Link to="/multi-media">
-                        <div className='main-nav-item'>
-                            <p>Mutli-Media</p>
-                        </div>
-                    </Link>
-                    <Link to="/software-development">
-                        <div className='main-nav-item'>
-                            <p>Software Development</p>
-                        </div>
-                    </Link>
-                </div>
+                <Home_Navigation_Boxes />
             </div>
         </div>
         </>

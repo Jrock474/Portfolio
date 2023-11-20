@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom"
-import { useState, } from "react"
+import { useState } from "react"
 
 import Animations from "./Pages/Animations"
 import Music from "./Pages/Music"

@@ -1,8 +1,30 @@
+import { useContext } from "react";
 import Software from "../Conponents/Software";
+import { AboutState } from "./Home_Navigation";
 
 const About = () => {
+
+  const [isAboutActive, setIsAboutActive] = useContext(AboutState)
+  const handleClick = (e) =>{
+    // Checks if the Banner Section is Clicked and if it's active
+    if (e == "Start"){
+      if (isAboutActive === true) {
+        setIsAboutActive(false)
+      } else {
+        setIsAboutActive(true)
+      }
+    }
+  }
+
   return (
     <>
+      <div className="banner">
+        <div className="about-header">Welcome to my Portfolio!</div>
+        <div className="about-subheading">Here you will find all of my previous works from Software Development to Multi-media</div>
+        <button name="About Me">About Me</button>
+        <button name="Start" onClick={(e) =>{handleClick(e.target.name)}}>Start</button>
+      </div>
+
       <div className="about-content-flex">
         <h1>About Me</h1>
         <section className="about-section2-bg">
