@@ -327,6 +327,7 @@ html{
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px; 
+    align-items: center;
 }
 
 .main-nav{
@@ -474,6 +475,19 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.banner div{
+    margin-bottom: 15px;
+}
+
+.banner button{
+    margin-bottom: 5px;
+}
+
+.banner-header{
+    font-size: 2rem;
 }
 
 @media(max-width:1000px) {
