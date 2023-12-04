@@ -476,6 +476,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .banner div{
@@ -484,6 +485,7 @@ html{
 
 .banner button{
     margin-bottom: 5px;
+    width: 100px;
 }
 
 .banner-header{
