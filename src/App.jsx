@@ -58,7 +58,12 @@ const App = () => {
         <Route path = "/music" element = {<Music />} />
       </Routes>
     </BannerState.Provider>
-    <Footer id={footerID} className={sharedFooterClass} />
+
+    {/* Hides Footer if Banner is Active */}
+    {isBannerActive ?
+    null
+     : 
+    <Footer id={footerID} className={sharedFooterClass} />}
    </div>
    </>
    

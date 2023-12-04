@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import Software from "../Conponents/Software";
+import Wave_SVG from "../Conponents/Wave_SVG";
 import { BannerState } from "../App";
 
 const About = () => {
@@ -24,50 +25,10 @@ const About = () => {
         <div className="banner-subheading">Here you will find all of my previous works from Software Development to Multi-media</div>
         <button name="About Me">About Me</button>
         <button name="Start" onClick={(e) =>{handleClick(e.target.name)}}>Start</button>
-        <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave"
-          d="M-160 44c30 0 
-        58-18 88-18s
-        58 18 88 18 
-        58-18 88-18 
-        58 18 88 18
-        v44h-352z"
-        />
-      </defs>
-      <g class="waves">
-        <use
-          xlink:href="#gentle-wave"
-          x="50"
-          y="0"
-          fill="#03ffff"
-          fill-opacity=".2"
-        />
-        <use
-          xlink:href="#gentle-wave"
-          x="50"
-          y="3"
-          fill="#03ffff"
-          fill-opacity=".5"
-        />
-        <use
-          xlink:href="#gentle-wave"
-          x="50"
-          y="6"
-          fill="#03ffff"
-          fill-opacity=".9"
-        />
-      </g>
-    </svg>
+        <Wave_SVG />
       </div>
 
-      <div className="about-content-flex">
+      {/* <div className="about-content-flex">
         <h1>About Me</h1>
         <section className="about-section2-bg">
           <div className="about-section-content">
@@ -169,7 +130,7 @@ const About = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </>
   );
 };
