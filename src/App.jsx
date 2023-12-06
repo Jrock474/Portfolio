@@ -19,25 +19,25 @@ const App = () => {
 
   const [isBannerActive, setIsBannerActive] = useState(true)
 
-  const [footerID, setFooterID] = useState("")
+  const [footerID, setFooterID] = useState("home-footer")
   const [sharedFooterClass, setSharedFooterClass] = useState("")
-  const [headerID, setHeaderID] = useState("")
+  const [headerID, setHeaderID] = useState("home-header")
   const [sharedHeaderClass, setSharedHeaderClass] = useState("")
 
-  React.useEffect(() => {
-    // runs on location, i.e. route, change
-    if(location.pathname === "/"){
-      setSharedHeaderClass(null)
-      setSharedFooterClass(null)
-      setHeaderID("home-header")
-      setFooterID("home-footer")
-    } else {
-      setHeaderID(null)
-      setFooterID(null)
-      setSharedHeaderClass("shared-header")
-      setSharedFooterClass("shared-footer")
-    }
-  }, [location])
+  // React.useEffect(() => {
+  //   // runs on location, i.e. route, change
+  //   if(location.pathname === "/"){
+  //     setSharedHeaderClass(null)
+  //     setSharedFooterClass(null)
+  //     setHeaderID("home-header")
+  //     setFooterID("home-footer")
+  //   } else {
+  //     setHeaderID(null)
+  //     setFooterID(null)
+  //     setSharedHeaderClass("shared-header")
+  //     setSharedFooterClass("shared-footer")
+  //   }
+  // }, [location])
 
   return (
     <>
