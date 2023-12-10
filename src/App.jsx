@@ -19,24 +19,18 @@ const App = () => {
 
   const [isBannerActive, setIsBannerActive] = useState(true)
 
-  const [footerID, setFooterID] = useState("")
+  const [footerID, setFooterID] = useState("home-footer")
   const [sharedFooterClass, setSharedFooterClass] = useState("")
-  const [headerID, setHeaderID] = useState("")
+  const [headerID, setHeaderID] = useState("home-header")
   const [sharedHeaderClass, setSharedHeaderClass] = useState("")
 
   React.useEffect(() => {
     // runs on location, i.e. route, change
-    if(location.pathname === "/"){
-      setSharedHeaderClass(null)
-      setSharedFooterClass(null)
-      setHeaderID("home-header")
-      setFooterID("home-footer")
-    } else {
-      setHeaderID(null)
-      setFooterID(null)
-      setSharedHeaderClass("shared-header")
-      setSharedFooterClass("shared-footer")
-    }
+    if(!location.pathname === "/"){
+      if (isBannerActive === true){
+        setIsBannerActive(false)
+      }
+    } 
   }, [location])
 
   return (
@@ -44,7 +38,7 @@ const App = () => {
    <div className ="site-wrapper">
     
      {/* Conditional render that hides the header if the banner is active */}
-    {isBannerActive ?
+    {isBannerActive && location.pathname === "/" ?
     null
      : 
     <Header id={headerID} className={sharedHeaderClass}/>}
@@ -58,7 +52,12 @@ const App = () => {
         <Route path = "/music" element = {<Music />} />
       </Routes>
     </BannerState.Provider>
-    <Footer id={footerID} className={sharedFooterClass} />
+
+    {/* Hides Footer if Banner is Active */}
+    {isBannerActive && location.pathname === "/"?
+    null
+     : 
+    <Footer id={footerID} className={sharedFooterClass} />}
    </div>
    </>
    

@@ -266,6 +266,7 @@ h1{
 }
 
 *{
+    z-index: 100;
     box-sizing: border-box;
 }
 
@@ -275,8 +276,7 @@ html{
     background-color: rgb(192, 175, 175);
 }
 
-#lightbox {
-    position: fixed;
+#lightbox-hover {
     z-index: 1000;
     top: 0;
     left: 0;
@@ -289,7 +289,72 @@ html{
     
 }
 
+#lightbox-container {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+  }
+
+  #lightbox-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #media-lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#lightbox {
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #lightbox img{
+    max-height: 350px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  #lightbox p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+#media-lightbox img{
     max-width: 80%;
     height: auto;
     padding-left: 10px;
@@ -327,6 +392,7 @@ html{
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px; 
+    align-items: center;
 }
 
 .main-nav{
@@ -415,6 +481,7 @@ html{
 }
 
 .software-development-container{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
@@ -424,15 +491,17 @@ html{
 
 .software-project{
     display: flex;
-    flex-direction: column;
-    width: 270px;
-    height: 440px;
+    justify-content: center;
+    overflow:hidden;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
     border-style:ridge ;
     margin: 10px;
 }
 
 .software-project img{
-    width: 100%;
+    height: 100%;
 }
 
 .software-button-container{
@@ -474,7 +543,53 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.banner div{
+    margin-bottom: 15px;
+}
+
+.banner button{
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.banner-header{
+    font-size: 2rem;
+}
+
+.waves > use {
+    animation: move-forever 2s -2s linear infinite;
+  }
+  
+  .waves > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 6s;
+  }
+  .waves > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    max-height: 200px;
+  }
 
 @media(max-width:1000px) {
 

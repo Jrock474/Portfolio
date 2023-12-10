@@ -18,7 +18,7 @@ const Home_Navigation = () => {
      : 
     <>  
         <video autoPlay muted loop className="home-page-animation">
-            <source src="Videos\Timeline_1.mp4" type="video/mp4" />
+            <source src="\Site_Files\Ocean BG.mp4" type="video/mp4" />
             Sorry, your browser doesn't support videos.
         </video>
         <div className='home-wrapper'>

@@ -1,6 +1,6 @@
 const Footer = (props) => {
     return (
-        <footer id={props.id} className={props.className}>
+        <footer id= "home-footer">
       <p>
           <a href="mailto:jordanw0412@gmail.com">Contact</a>
       </p>    

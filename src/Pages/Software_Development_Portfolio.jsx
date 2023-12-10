@@ -4,6 +4,10 @@ import Software_Development_Project from '../Conponents/Software_Development_Pro
 const Software_Development_Portfolio = () => {
   return (
     <>
+    <video autoPlay muted loop className="home-page-animation">
+            <source src="\Videos\World_is_Yours_10_Seconds.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support videos.
+        </video>
     <h1>Software Development Projects</h1>
     <div className='software-development-container'>
       <Software_Development_Project 
