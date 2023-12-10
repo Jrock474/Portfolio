@@ -276,8 +276,7 @@ html{
     background-color: rgb(192, 175, 175);
 }
 
-#lightbox {
-    position: fixed;
+#lightbox-hover {
     z-index: 1000;
     top: 0;
     left: 0;
@@ -290,7 +289,72 @@ html{
     
 }
 
+#lightbox-container {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+  }
+
+  #lightbox-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #media-lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#lightbox {
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #lightbox img{
+    max-height: 350px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  #lightbox p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+#media-lightbox img{
     max-width: 80%;
     height: auto;
     padding-left: 10px;
@@ -417,6 +481,7 @@ html{
 }
 
 .software-development-container{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
@@ -425,17 +490,18 @@ html{
 }
 
 .software-project{
+    display: flex;
+    justify-content: center;
     overflow:hidden;
     border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-style:ridge ;
     margin: 10px;
 }
 
 .software-project img{
-    width: 100%;
+    height: 100%;
 }
 
 .software-button-container{

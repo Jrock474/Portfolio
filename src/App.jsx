@@ -24,27 +24,21 @@ const App = () => {
   const [headerID, setHeaderID] = useState("home-header")
   const [sharedHeaderClass, setSharedHeaderClass] = useState("")
 
-  // React.useEffect(() => {
-  //   // runs on location, i.e. route, change
-  //   if(location.pathname === "/"){
-  //     setSharedHeaderClass(null)
-  //     setSharedFooterClass(null)
-  //     setHeaderID("home-header")
-  //     setFooterID("home-footer")
-  //   } else {
-  //     setHeaderID(null)
-  //     setFooterID(null)
-  //     setSharedHeaderClass("shared-header")
-  //     setSharedFooterClass("shared-footer")
-  //   }
-  // }, [location])
+  React.useEffect(() => {
+    // runs on location, i.e. route, change
+    if(!location.pathname === "/"){
+      if (isBannerActive === true){
+        setIsBannerActive(false)
+      }
+    } 
+  }, [location])
 
   return (
     <>
    <div className ="site-wrapper">
     
      {/* Conditional render that hides the header if the banner is active */}
-    {isBannerActive ?
+    {isBannerActive && location.pathname === "/" ?
     null
      : 
     <Header id={headerID} className={sharedHeaderClass}/>}
@@ -60,7 +54,7 @@ const App = () => {
     </BannerState.Provider>
 
     {/* Hides Footer if Banner is Active */}
-    {isBannerActive ?
+    {isBannerActive && location.pathname === "/"?
     null
      : 
     <Footer id={footerID} className={sharedFooterClass} />}

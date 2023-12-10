@@ -15,7 +15,7 @@ const Header = (props) => {
 
     return(
         <>
-        <header id={props.id} className={props.className}>
+        <header id="home-header">
         <section className="container-shared-header">
             <div onClick={onNavbarClick} className = "toggle-button">
                 <span className ="bar"></span>

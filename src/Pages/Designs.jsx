@@ -22,7 +22,7 @@ const Designs = () => {
 
     return(
         <>
-        {isLightboxActive === true ? <div onClick={(e) =>{lightboxImageClick(e.target.src)}} id="lightbox"><img src ={lightbox}></img></div> : null}
+        {isLightboxActive === true ? <div onClick={(e) =>{lightboxImageClick(e.target.src)}} id="media-lightbox"><img src ={lightbox}></img></div> : null}
         <div className="gallery-section">
             <h1>Designs</h1>
             <div className="gallery-container">
