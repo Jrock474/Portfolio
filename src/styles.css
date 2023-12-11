@@ -490,18 +490,19 @@ html{
 }
 
 .software-project{
-    display: flex;
-    justify-content: center;
-    overflow:hidden;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border: 1px solid white;
+    box-shadow: inset 5px -5px 10px white;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    border-style:ridge ;
-    margin: 10px;
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px);
 }
 
 .software-project img{
     height: 100%;
+    opacity: 40%;
 }
 
 .software-button-container{
