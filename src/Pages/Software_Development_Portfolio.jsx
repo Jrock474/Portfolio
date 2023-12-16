@@ -1,12 +1,12 @@
 import React from 'react'
-import Software_Development_Project from '../Conponents/Software_Development_Project'
+import Software_Development_Project from '../Components/Software_Development_Project'
 
 const Software_Development_Portfolio = () => {
   return (
     <>
     <video autoPlay muted loop className="home-page-animation">
-            <source src="\Videos\World_is_Yours_10_Seconds.mp4" type="video/mp4" />
-            Sorry, your browser doesn't support videos.
+      <source src="\Videos\World_is_Yours_10_Seconds.mp4" type="video/mp4" />
+      Sorry, your browser doesn't support videos.
         </video>
     <h1>Software Development Projects</h1>
     <div className='software-development-container'>
@@ -32,7 +32,7 @@ const Software_Development_Portfolio = () => {
         description = "This was my initial portfolio that was developed without a framework while I was still learning how to code. Its purpose was to showcase my prevoius creative works"
       />
       <Software_Development_Project 
-        img="https://user-images.githubusercontent.com/38538883/281213796-b499276b-fcb3-4f24-8a62-e867a5085af2.png"
+        img= "https://user-images.githubusercontent.com/38538883/281213796-b499276b-fcb3-4f24-8a62-e867a5085af2.png"
         title = "Kanri-Mono"
         gitHub = "https://github.com/Jrock474/Capstone_Project"
         website = "https://capstone-project-psi-bay.vercel.app/"

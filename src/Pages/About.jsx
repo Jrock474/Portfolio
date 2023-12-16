@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import Software from "../Conponents/Software";
-import Wave_SVG from "../Conponents/Wave_SVG";
+import Software from "../Components/Software";
+import Wave_SVG from "../Components/Wave_SVG";
 import { BannerState } from "../App";
 
 const About = () => {

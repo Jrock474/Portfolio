@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react'
 import About from './About'
-import Home_Navigation_Boxes from '../Conponents/Home_Navigation_Boxes'
+import Home_Navigation_Boxes from '../Components/Home_Navigation_Boxes'
 import { BannerState } from '../App'
 
 

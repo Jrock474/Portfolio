@@ -35,7 +35,7 @@ const Software_Development_Project = (props) => {
       </div>
       <p>{props.title}</p>
       <p>{props.description}</p>
-      <div className='website_buttons'>
+      <div className='website-buttons'>
         <button><a target="_blank" href={props.website}>Website</a></button>
         <button><a target="_blank" href={props.gitHub}>Github</a></button>
       </div>

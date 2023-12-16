@@ -301,7 +301,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     
   }
 
@@ -325,17 +325,20 @@ html{
   }
 
 #lightbox {
+    max-width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
-    position: fixed;
+    position: relative;
     z-index: 1000;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(15, 46, 118, 0.5);
 }
 
 #lightbox img{
@@ -377,6 +380,11 @@ html{
     height: 21px;
     top: 25px;
     right: 25px;
+}
+
+.website-buttons{
+    display: flex;
+    flex-direction: column;
 }
 
 .toggle-button .bar{
@@ -618,6 +626,10 @@ html{
     .container-home-header{
         display: flex;
         flex-direction: column;
+    }
+
+    #lightbox {
+        max-width: 80%;
     }
 
     .nav-area {
