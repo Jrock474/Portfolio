@@ -94,7 +94,7 @@
 }
 
 #home-header{
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.9);
     color: #f1f1f1;
     width: 100%;
     height: auto;   
@@ -226,7 +226,7 @@ body{
 
 h1{
     text-align: center;
-    background-color: #333;
+    background-color: hsl(0, 7%, 14%, 0.6);
     padding-top: 20px;
     padding-bottom: 20px;
     margin:0;
@@ -509,7 +509,20 @@ html{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .01);
     backdrop-filter: blur(2px);
+    animation: bounce 3s; 
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out; 
+    animation-iteration-count: infinite; 
 }
+
+@keyframes bounce { 
+    from { 
+        transform: translate3d(0, 0, 0); 
+    } 
+    to { 
+        transform: translate3d(0, 40px, 0); 
+    } 
+} 
 
 .software-project::before {
     position: absolute;
