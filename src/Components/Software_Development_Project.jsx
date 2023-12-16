@@ -35,8 +35,12 @@ const Software_Development_Project = (props) => {
       </div>
       <p>{props.title}</p>
       <p>{props.description}</p>
-      <div id="lightbox-button">
-        {/* <button onClick={getMovieDetails}>Collapse</button> */}
+      <div className='website-buttons'>
+        <button><a target="_blank" href={props.website}>Website</a></button>
+        <button><a target="_blank" href={props.gitHub}>Github</a></button>
+      </div>
+      <div className="lightbox-button">
+        <button onClick={handleClick}>Collapse</button>
       </div>
     </div>
   </div> : 

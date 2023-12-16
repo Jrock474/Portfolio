@@ -301,7 +301,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     
   }
 
@@ -325,17 +325,20 @@ html{
   }
 
 #lightbox {
+    max-width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
-    position: fixed;
+    position: relative;
     z-index: 1000;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(15, 46, 118, 0.5);
 }
 
 #lightbox img{
@@ -377,6 +380,11 @@ html{
     height: 21px;
     top: 25px;
     right: 25px;
+}
+
+.website-buttons{
+    display: flex;
+    flex-direction: column;
 }
 
 .toggle-button .bar{
@@ -490,18 +498,34 @@ html{
 }
 
 .software-project{
+    margin: 20px;
     display: flex;
     justify-content: center;
-    overflow:hidden;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border: 1px solid white;
+    box-shadow: inset 5px -5px 10px white;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    border-style:ridge ;
-    margin: 10px;
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px);
+}
+
+.software-project::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 25px;
+    right: 23px;
+    box-shadow: 0px 0px 20px white;
 }
 
 .software-project img{
     height: 100%;
+    opacity: 40%;
 }
 
 .software-button-container{
@@ -591,6 +615,10 @@ html{
     max-height: 200px;
   }
 
+  .lightbox-button{
+    margin-top: 10px;
+  }
+
 @media(max-width:1000px) {
 
     html { font-size: 12px; }
@@ -598,6 +626,10 @@ html{
     .container-home-header{
         display: flex;
         flex-direction: column;
+    }
+
+    #lightbox {
+        max-width: 80%;
     }
 
     .nav-area {
