@@ -301,8 +301,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    
+    background-color: rgba(0, 0, 0, 0.9); 
   }
 
   #lightbox-image-container{
@@ -510,17 +509,27 @@ html{
     background-color: rgba(255, 255, 255, .01);
     backdrop-filter: blur(2px);
     animation: bounce 3s; 
-    animation-direction: alternate; 
+    /* animation-direction:alternate;  */
     animation-timing-function:ease-in-out; 
     animation-iteration-count: infinite; 
 }
 
+/* selects all children in the container */
+.software-development-container div{
+
+    
+}
+
 @keyframes bounce { 
-    from { 
-        transform: translate3d(0, 0, 0); 
+    0% { 
+        /* transform: translate3d(0, 800px, 0);  */
+        transform: translateY(800px);
     } 
-    to { 
-        transform: translate3d(0, 40px, 0); 
+
+    100% { 
+        /*  */
+        transform: translateY(-400px);
+        /* transform: translate3d(0, -400px, 0);  */
     } 
 } 
 
