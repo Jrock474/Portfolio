@@ -1,9 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect } from 'react'
 
 const Software_Development_Project = (props) => {
 
+  useEffect (()=>{
+    updateStyles()
+  },[])
+
   const [isHoverActive, setIsHoverActive] = useState(false)
   const [isLightboxActive, setIsLightBoxActive] = useState(false)
+
+  const divRef = useRef(null);
 
   const handleHover = () =>{
     if (isHoverActive === false){
@@ -23,6 +29,19 @@ const Software_Development_Project = (props) => {
     } else {
       setIsLightBoxActive(false)
     }
+  }
+
+  const updateStyles = () => {
+
+    const { xPos, speed } = props;
+    
+    if (!divRef || !divRef.current ) {
+      return;
+    }
+
+    divRef.current.style.animation = `bounce ${speed}s`;
+    divRef.current.style["animation-iteration-count"] = 'infinite';
+    divRef.current.style.transform = `translateX(${xPos}px)`;
   }
 
   return (
@@ -46,7 +65,7 @@ const Software_Development_Project = (props) => {
   </div> : 
     null}
 
-    <div className="software-project" onMouseEnter={handleHover} onMouseLeave={handleHoverExit} onClick={handleClick}>
+    <div ref={divRef} className="software-project" onMouseEnter={handleHover} onMouseLeave={handleHoverExit} onClick={handleClick}>
     {isHoverActive ? <div id='lightbox-hover'>{props.title}</div> : <img src ={props.img} />}  
     </div>     
     </>
