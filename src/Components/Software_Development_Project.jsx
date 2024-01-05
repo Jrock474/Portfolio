@@ -39,7 +39,7 @@ const Software_Development_Project = (props) => {
       return;
     }
       divRef.current.style.animation = `bubble_intro ${speed}s`;
-      // divRef.current.style["animation-iteration-count"] = 'infinite';
+      divRef.current.style["animation-iteration-count"] = 'infinite';
       divRef.current.style["animation-timing-function:ease-out"]
       
 
@@ -49,7 +49,7 @@ const Software_Development_Project = (props) => {
 
   const bubbleLoop = () =>{
     divRef.current.style["animation-timing-function:ease-out"]
-    divRef.current.style.animation = `bubble_loop ${5}s`
+    // divRef.current.style.animation = `bubble_loop ${5}s`
   }
 
   return (
