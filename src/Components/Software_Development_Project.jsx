@@ -3,7 +3,7 @@ import React, {useState, useRef, useEffect } from 'react'
 const Software_Development_Project = (props) => {
 
   useEffect (()=>{
-    updateStyles()
+    updateStyles(bubbleLoop)
   },[])
 
   const [isHoverActive, setIsHoverActive] = useState(false)
@@ -31,17 +31,25 @@ const Software_Development_Project = (props) => {
     }
   }
 
-  const updateStyles = () => {
+  const updateStyles = (callback) => {
 
-    const { xPos, speed } = props;
+    const { speed } = props;
     
     if (!divRef || !divRef.current ) {
       return;
     }
+      divRef.current.style.animation = `bubble_intro ${speed}s`;
+      divRef.current.style["animation-iteration-count"] = 'infinite';
+      divRef.current.style["animation-timing-function:ease-out"]
+      
 
-    divRef.current.style.animation = `bounce ${speed}s`;
-    divRef.current.style["animation-iteration-count"] = 'infinite';
-    divRef.current.style.transform = `translateX(${xPos}px)`;
+   callback(); 
+
+  }
+
+  const bubbleLoop = () =>{
+    divRef.current.style["animation-timing-function:ease-out"]
+    // divRef.current.style.animation = `bubble_loop ${5}s`
   }
 
   return (

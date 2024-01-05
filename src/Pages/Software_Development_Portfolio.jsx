@@ -2,6 +2,7 @@ import React, { useState  } from 'react'
 import Software_Development_Project from '../Components/Software_Development_Project'
 
 const Software_Development_Portfolio = () => {
+
   const [data, setData] = useState([
     {
       img:"https://raw.githubusercontent.com/Jrock474/Movie_Search/main/src/assets/Movie_Search_Preview.png",
@@ -34,10 +35,8 @@ const Software_Development_Portfolio = () => {
   ]);
 
   const screenWidth = window.innerWidth
-  console.log(screenWidth)
   
-
-  function createProject(projectData, index) {
+  const createProject = (projectData, index) =>{
     const {img, title, gitHub, website, description} = projectData;
     return <Software_Development_Project
       key={index}
@@ -46,12 +45,11 @@ const Software_Development_Portfolio = () => {
       gitHub={gitHub} 
       website={website}
       description={description}
-      xPos={getRandomNumber(100, screenWidth - 100, true)}
-      speed={getRandomNumber(3, 9, false)}
+      speed={3}
     />
   }
 
-  function getRandomNumber(min, max, isInt) {
+  const getRandomNumber = (min, max, isInt) => {
     const range = max - min + 1;
     const randomNumber = isInt ? 
       Math.floor((Math.random() * range) + min) :
