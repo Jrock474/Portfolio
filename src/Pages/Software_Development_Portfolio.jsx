@@ -41,6 +41,13 @@ const Software_Development_Portfolio = () => {
         website = "https://graph-ql-practice-nine.vercel.app/"
         description = "Server dedicated to querying the database from Kanri-Mono to return user data"
       />
+      <Software_Development_Project 
+        img="Site_Files/Health & Fitness.png"
+        title = "Health & Fitness"
+        gitHub = "https://github.com/Jrock474/GraphQL-Practice"
+        website = "https://front-end-project-plum.vercel.app/"
+        description = "My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
+      />
     </div>
     </>
   )
