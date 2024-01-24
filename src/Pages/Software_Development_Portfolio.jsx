@@ -41,13 +41,6 @@ const Software_Development_Portfolio = () => {
         website = "https://capstone-project-psi-bay.vercel.app/"
         description = "Collaborative project focused around creating a pet game. I was responsible for the server and backend"
       />
-      <Software_Development_Project 
-        img="Site_Files/Health & Fitness.png"
-        title = "Health & Fitness"
-        gitHub = "https://github.com/Jrock474/GraphQL-Practice"
-        website = "https://front-end-project-plum.vercel.app/"
-        description = "My first collaboration project focused on using HTML CSS and Vanilla JavaScript"
-      />
     </div>
     </>
   )
