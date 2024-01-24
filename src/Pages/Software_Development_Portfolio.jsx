@@ -1,5 +1,5 @@
 import React from 'react'
-import Software_Development_Project from '../Conponents/Software_Development_Project'
+import Software_Development_Project from '../components/Software_Development_Project'
 
 const Software_Development_Portfolio = () => {
   return (
@@ -33,6 +33,13 @@ const Software_Development_Portfolio = () => {
         gitHub = "https://github.com/Jrock474/Capstone_Project"
         website = "https://capstone-project-psi-bay.vercel.app/"
         description = "I served as the Project Manager and my responsibillities were: Deployment, Database & Database Migrations, Game Logic, server-side Login & Registration logic, and server-side Save Data logic"
+      />
+      <Software_Development_Project 
+        img="https://user-images.githubusercontent.com/38538883/281213796-b499276b-fcb3-4f24-8a62-e867a5085af2.png"
+        title = "Kanri-Mono Server"
+        gitHub = "https://github.com/Jrock474/GraphQL-Practice"
+        website = "https://graph-ql-practice-nine.vercel.app/"
+        description = "Server dedicated to querying the database from Kanri-Mono to return user data"
       />
     </div>
     </>

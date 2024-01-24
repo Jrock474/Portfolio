@@ -1,4 +1,4 @@
-import Software from "../Conponents/Software";
+import Software from "../components/Software";
 
 const About = () => {
   return (
