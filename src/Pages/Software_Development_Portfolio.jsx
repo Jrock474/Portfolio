@@ -1,5 +1,5 @@
 import React from 'react'
-import Software_Development_Project from '../components/Software_Development_Project'
+import Software_Development_Project from '../conponents/Software_Development_Project'
 
 const Software_Development_Portfolio = () => {
   return (
