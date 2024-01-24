@@ -4,7 +4,7 @@ import { useState, } from "react"
 import Animations from "./Pages/Animations"
 import Music from "./Pages/Music"
 import Designs from "./Pages/Designs"
-import Header from "./components/Header"
+// import Header from "./components/Header"
 import Footer from "./components/Footer"
 import About from "./Pages/About"
 import React from "react"
@@ -39,7 +39,7 @@ const App = () => {
   return (
     <>
    <div className ="site-wrapper">
-   <Header id={headerID} className={sharedHeaderClass}/>
+   {/* <Header id={headerID} className={sharedHeaderClass}/> */}
     <Routes>
         <Route path = "/" element = {<Home_Navigation />} />
         <Route path = "/about" element = {<About />} />
