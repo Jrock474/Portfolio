@@ -17,67 +17,67 @@ const Devicons = () => {
         text="Photoshop"
     />
     <Software
-        img="public/devicons/Jira.svg"
+        img="devicons/Jira.svg"
         text="Jira"
     />
     <Software
-        img="public/devicons/Visual Studio Code (VS Code).svg"
+        img="devicons/Visual Studio Code (VS Code).svg"
         text="VS Code"
     />
     <Software
-        img="public/devicons/Git.svg"
+        img="devicons/Git.svg"
         text="Git"
     />
     <Software
-        img="public/devicons/GitHub.svg"
+        img="devicons/GitHub.svg"
         text="GitHub"
     />
     <Software
-        img="public/devicons/AWS.svg"
+        img="devicons/AWS.svg"
         text="AWS(EC2)"
     />
     <Software
-        img="public/devicons/HTML5.svg"
+        img="devicons/HTML5.svg"
         text="HTML"
     />
     <Software
-        img="public/devicons/CSS3.svg"
+        img="devicons/CSS3.svg"
         text="CSS"
     />
     <Software
-        img="public/devicons/JavaScript.svg"
+        img="devicons/JavaScript.svg"
         text="JavaScript"
     />
     <Software
-        img="public/devicons/JSON.svg"
+        img="devicons/JSON.svg"
         text="JSON"
     />
     <Software
-        img="public/devicons/React.svg"
+        img="devicons/React.svg"
         text="React.js"
     />
     <Software
-        img="public/devicons/TypeScript.svg"
+        img="devicons/TypeScript.svg"
         text="Typescript.js"
     />
     <Software
-        img="public/devicons/Node.js.svg"
+        img="devicons/Node.js.svg"
         text="Node.js"
     />
     <Software
-        img="public/devicons/Express.svg"
+        img="devicons/Express.svg"
         text="Express.js"
     />
     <Software
-        img="public/devicons/Jest.svg"
+        img="devicons/Jest.svg"
         text="Jest.js"
     />
     <Software
-        img="public/devicons/Sequelize.svg"
+        img="devicons/Sequelize.svg"
         text="Sequelize.js"
     />
     <Software
-        img="public/devicons/NPM.svg"
+        img="devicons/NPM.svg"
         text="NPM"
     />
     </>
