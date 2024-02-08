@@ -22,7 +22,7 @@ const About = () => {
               <p className="skills-grid1">Video Editing</p>
               <p className="skills-grid2">Graphic Design</p>
               <p className="skills-grid3">Animations</p>
-              <p className="skills-grid4">HTML & CSS</p>
+              <p className="skills-grid4">Game Design</p>
               <p className="skills-grid5">Typography</p>
               <p className="skills-grid6">Music Production</p>
               <p className="skills-grid7">Software Development</p>
