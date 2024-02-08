@@ -328,6 +328,8 @@ html{
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px; 
+    justify-content: center;
+    align-items: center;
 }
 
 .main-nav{
@@ -524,11 +526,10 @@ html{
         flex-direction: column;
     }
    
-    .software{
-        display: flex;
-        flex-direction: column;
+    #devicon-image{
+        height: 50px;
+        width: 50px;
     }
-
 
     .gallery-container{
         display: flex;
