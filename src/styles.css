@@ -507,7 +507,7 @@ html{
     .nav-area-active li{
         display: inline-block;
         font-size: 1rem;
-        margin-bottom: 10px;
+        padding: 10px;
     }
     
     .nav-area-active li a{
