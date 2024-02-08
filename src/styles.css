@@ -52,9 +52,10 @@
 }
 
 .nav-area {
+    display: flex;
     list-style: none;
     padding: auto;
-    padding-top: 40px; 
+    align-items: center;
 }
 
 .nav-area li{
@@ -213,7 +214,7 @@ body{
 
 .software{
     display: flex;
-    align-content: space-around;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -551,6 +552,15 @@ html{
 
     .main-nav{
         flex-direction: column;
+    }
+
+    .sub-heading{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .shared-footer p img{
+        display: none;
     }
 }
 

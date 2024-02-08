@@ -31,80 +31,76 @@ const About = () => {
             <div className="software-text">Software</div>
             <div className="software">
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                img="devicons/After Effects.svg"
                 text="After Effects"
               />
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-                text="Photoshop"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                img="devicons/Adobe Illustrator.svg"
                 text="Illustrator"
               />
               <Software
-                img="http://esotericsoftware.com/files/branding/spine_badge.png"
-                text="Spine-2D"
+                img="devicons/Adobe Photoshop.svg"
+                text="Photoshop"
               />
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
-                text="Maya Autodesk"
+                img="public/devicons/Jira.svg"
+                text="Jira"
               />
               <Software
-                img="https://www.allavio.com/wp-content/uploads/2021/03/davinci_resolve_logo__no_grain_edition__by_who2lu_deef1fd-pre.png"
-                text="Davanci Resolve"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                text="Visual Studio Code"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                text="Node.js"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" 
-                text="Sequelize"
-              />
-              <Software 
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                text="Postgres"
-              />
-              <Software 
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                text="Javascript"
-              />  
-              <Software 
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                text="React.js"
-              />
-              <Software 
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                text="Github"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                img="public/devicons/Git.svg"
                 text="Git"
               />
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                text="HTML 5"
+                img="public/devicons/GitHub.svg"
+                text="GitHub"
               />
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
-                text="Jquery"
+                img="public/devicons/AWS.svg"
+                text="AWS(EC2)"
               />
               <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+                img="public/devicons/HTML5.svg"
+                text="HTML"
+              />
+              <Software
+                img="public/devicons/CSS3.svg"
+                text="CSS"
+              />
+              <Software
+                img="public/devicons/JavaScript.svg"
+                text="JavaScript"
+              />
+              <Software
+                img="public/devicons/JSON.svg"
+                text="JSON"
+              />
+              <Software
+                img="public/devicons/React.svg"
+                text="React.js"
+              />
+              <Software
+                img="public/devicons/TypeScript.svg"
+                text="Typescript.js"
+              />
+              <Software
+                img="public/devicons/Node.js.svg"
+                text="Node.js"
+              />
+              <Software
+                img="public/devicons/Express.svg"
+                text="Express.js"
+              />
+              <Software
+                img="public/devicons/Jest.svg"
+                text="Jest.js"
+              />
+              <Software
+                img="public/devicons/Sequelize.svg"
+                text="Sequelize.js"
+              />
+              <Software
+                img="public/devicons/NPM.svg"
                 text="NPM"
-              />
-              <Software
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                text="Express.js" 
-              />
-              <Software 
-                img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                text="CSS 3"
               />
             </div>
           </div>

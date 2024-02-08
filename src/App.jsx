@@ -52,7 +52,6 @@ const App = () => {
     <Footer id={footerID} className={sharedFooterClass} />
    </div>
    </>
-   
   )
 }
 
