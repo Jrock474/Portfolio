@@ -5,8 +5,8 @@
     height: auto;
 }
 #devicon-image{
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 .container-shared-header{
     padding-left: 0;
@@ -52,9 +52,10 @@
 }
 
 .nav-area {
+    display: flex;
     list-style: none;
     padding: auto;
-    padding-top: 40px; 
+    align-items: center;
 }
 
 .nav-area li{
@@ -213,7 +214,7 @@ body{
 
 .software{
     display: flex;
-    align-content: space-around;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -270,7 +271,7 @@ h1{
 }
 
 html{
-    font-size: 16px;
+    font-size: 14px;
     height: 100%;
     background-color: rgb(192, 175, 175);
 }
@@ -327,6 +328,8 @@ html{
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px; 
+    justify-content: center;
+    align-items: center;
 }
 
 .main-nav{
@@ -523,11 +526,10 @@ html{
         flex-direction: column;
     }
    
-    .software{
-        display: flex;
-        flex-direction: column;
+    #devicon-image{
+        height: 50px;
+        width: 50px;
     }
-
 
     .gallery-container{
         display: flex;
@@ -551,6 +553,15 @@ html{
 
     .main-nav{
         flex-direction: column;
+    }
+
+    .sub-heading{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .shared-footer p img{
+        display: none;
     }
 }
 
