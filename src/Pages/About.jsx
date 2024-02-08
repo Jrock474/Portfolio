@@ -8,10 +8,14 @@ const About = () => {
         <section className="about-section2-bg">
           <div className="about-section-content">
             <p>
-              I've studied Multimedia and Software Development since 2018 while still in college. At the time I was studing Computer Science but I needed an outlet
-              This led me to teaching myself Graphic Design and later Web Design to showcase the former.
-              This eventually turned into a passion where I would forever be in a perpetual state of learning as 
-              as technology is constantly evolving.   My goal is to combine my knowlege of Software Development with my passion with Multi Media and contribute to the Art and Software Development Community. 
+            My journey with multimedia and software development began in 2018, 
+            during my computer science studies. Seeking a creative outlet, I 
+            embarked on self-directed learning in graphic design, followed by web 
+            design to present my graphic work effectively. This sparked a passion 
+            for multimedia, fueled by the continuous evolution of technology that 
+            keeps me in a perpetual state of learning. My objective is to leverage my combined 
+            expertise in software development and multimedia to contribute meaningfully to the art
+            and software development communities. 
             </p>
             <p>
               All Links: <a href="https://linktr.ee/Jordan474">Linktree</a>
