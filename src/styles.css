@@ -152,7 +152,7 @@
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify;
+    text-align: left;
     padding-top: 10px;
 }
 
@@ -429,7 +429,7 @@ html{
     display: flex;
     flex-direction: column;
     width: 270px;
-    height: 440px;
+    height: auto;
     border-style:ridge ;
     margin: 10px;
 }
@@ -470,6 +470,13 @@ html{
     text-decoration: none;
     color: white;
     text-align: center;
+}
+
+@media(max-width:600px) {
+    .main-nav-item{
+        min-width: 150px;
+        min-height: 150px;
+    }
 }
 
 @media(max-width:1000px) {
@@ -513,7 +520,10 @@ html{
     .nav-area-active li a{
         color: #fff;
         text-decoration: none;
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
     }
     
     .nav-area-active li a:hover{
