@@ -313,6 +313,7 @@ html{
     height: 21px;
     top: 25px;
     right: 25px;
+    padding: 10px;
 }
 
 .toggle-button .bar{
