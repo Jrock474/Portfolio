@@ -252,7 +252,7 @@ h1{
 } 
 
 .gallery-picture img {
-    max-height: 600.75px;
+    max-height: 350px;
     max-width: 100%;
     height: auto;
 }
