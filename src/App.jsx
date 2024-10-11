@@ -13,6 +13,7 @@ import Home_Navigation from "./Pages/Home_Navigation"
 import Software_Development_Portfolio from "./Pages/Software_Development_Portfolio"
 import './styles.css'
 
+
 const App = () => {
   const location = useLocation()
 
